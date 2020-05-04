@@ -5,9 +5,9 @@ public class Consts {
 
 	public static int TIME_OUT = 30000;
 
-	public final static String URL = "http://192.168.43.203:8080/ShopService/";
+	public final static String URL = "http://120.26.39.128:8080/ShopService/";
 
-	public final static String URL_IMAGE = "http://192.168.43.203:8080/ShopService/upload/";
+	public final static String URL_IMAGE = "http://120.26.39.128:8080/ShopService/upload/";
 
 
 
