@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_login"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/mll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/rl_title"
+            layout="@layout/title_sub_layout" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mllbottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/mbtnPay"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/main_color"
+            android:textSize="14dp"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/mbtnPay"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <TextView
+                android:id="@+id/mtvNowTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff0000"
+                android:text="time"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mllbottom"
+        android:layout_below="@id/mll"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/courseTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="对怎么做好新生接待的通知说明"
+                    android:textColor="#333333"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/mllInput"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/bg_color_login" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/bg_color_login" />
+
+
+
+                <TextView
+                    android:id="@+id/mCourseMessgae"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="15dp"
+                    android:text="         开学第一天，老师应亲切接待，叫着他的名字，拥抱他，和他说说话，以形体姿态给他温暖的体验。可以给他喜欢的玩具，或带他玩游戏设施，使初入园的儿童感到乐趣。对于哭闹的孩子，老师要像妈妈一样，哄抱一下，给以抚慰和鼓励，可以当着孩子的面请家长许诺尽早来接他。对于一些虽不哭，但内心焦虑烦燥不安的孩子，也要给予必要的关注。总之，应关注到每一个孩子。"
+                    android:textColor="#666666"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/mtvTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                android:text="时间：2018-09-06 09:00 "
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

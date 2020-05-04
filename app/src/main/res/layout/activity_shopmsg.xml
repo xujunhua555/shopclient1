@@ -1,0 +1,212 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_login"
+    android:orientation="vertical"
+    tools:context=".UnLoginActiviy" >
+
+    <LinearLayout
+        android:id="@+id/mll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/rl_title"
+            layout="@layout/title_sub_layout" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mllbottom"
+        android:layout_below="@id/mll"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/mtvtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/guide_image"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="25dp"
+                android:background="#333333"
+                android:scaleType="centerCrop"
+                 />
+
+            <LinearLayout
+                android:id="@+id/mllInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/bg_color_login" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="3dp"
+                            android:text="name"
+                            android:textColor="#666666"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical|right"
+                            android:lineSpacingExtra="3dp"
+                            android:text="phone"
+                            android:textColor="#666666"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+           
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/bg_color_login" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="商品描述："
+                    android:textColor="#333333"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/mtvcontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="3dp"
+                    android:padding="15dp"
+                    android:text="今日何日兮"
+                    android:textColor="#666666"
+                    android:textSize="14dp" />
+                
+                
+                
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/mllbottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/mbtnChat"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金额："
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/mtvShopPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0元"
+                android:textColor="#ff0000"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mbtnPay"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/main_color"
+            android:text="购买"
+            android:textSize="12dp"
+            android:textColor="#ffffff" />
+
+
+        <Button
+            android:id="@+id/mbtnChat"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/mbtnCollect"
+            android:layout_marginRight="1dp"
+            android:background="@color/main_color"
+            android:textSize="12dp"
+            android:text="沟通"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/mbtnCollect"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="1dp"
+            android:textSize="12dp"
+            android:layout_toLeftOf="@id/mbtnReview"
+            android:background="@color/main_color"
+            android:text="收藏"
+            android:textColor="#ffffff" />
+
+
+        <Button
+            android:id="@+id/mbtnReview"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/mbtnPay"
+            android:textSize="12dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/main_color"
+            android:text="评论"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</RelativeLayout>

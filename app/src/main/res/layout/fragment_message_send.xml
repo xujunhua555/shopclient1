@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_login"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp" >
+
+        <ListView
+            android:id="@+id/mListMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:divider="@color/bg_color_login"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/listview"
+            android:scrollbars="none" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/mllNomessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/no_message" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="暂无信息"
+                android:textColor="#bfbfbf" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/mviCreateMessage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:src="@drawable/icon_message_logo"/>
+
+    <Button
+        android:id="@+id/mviTongJi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="发布"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:layout_above="@+id/mviCreateMessage"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/icon_yuan"/>
+
+
+</RelativeLayout>
